@@ -1,0 +1,87 @@
+:root {
+  --main-active-color: #2196f3;
+  --true-white-color: #ffffff;
+  --title-color: #212121;
+  --hero-background-color: #2f303a;
+  --grey: #757575;
+  --transparent-white-color: rgba(255, 255, 255, 0.6);
+}
+/* body color */
+body {
+  background-color: #e5e5e5;
+}
+
+/* header background color */
+.header {
+  background-color: var(--true-white-color);
+}
+
+/* hero background color */
+.hero {
+  background-color: var(--hero-background-color);
+}
+
+/* footer background color */
+.footer {
+  background-color: var(--hero-background-color);
+}
+
+/* hidden titles */
+.hidden {
+  visibility: hidden;
+}
+
+/* current page highlighting */
+.nav .current {
+  color: var(--main-active-color);
+}
+
+/* removed ul styles */
+.section-list,
+.list,
+.nav-list,
+.address-list {
+  list-style: none;
+}
+
+/* painted hover and focus for links */
+.list .list-link:hover,
+.list .list-link:focus {
+  color: var(--main-active-color);
+}
+
+/* painted nav links */
+.nav-list .list-link {
+  color: var(--title-color);
+}
+
+/* painted contact-links */
+.contacts .contacts-link {
+  color: var(--grey);
+}
+
+.hero-title {
+  color: var(--true-white-color);
+}
+
+.hero-button {
+  color: var(--true-white-color);
+  background-color: var(--main-active-color);
+}
+
+.section-list-title,
+.section-title {
+  color: var(--title-color);
+}
+
+.section-list-text {
+  color: var(--grey);
+}
+
+.address-text {
+  color: var(--true-white-color);
+}
+
+.address-list-link {
+  color: var(--transparent-white-color);
+}
