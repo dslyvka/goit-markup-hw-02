@@ -5,12 +5,26 @@
   --hero-background-color: #2f303a;
   --grey: #757575;
   --transparent-white-color: rgba(255, 255, 255, 0.6);
+  --white-buttons-color: #f5f4fa;
 }
 /* body color */
 body {
   background-color: #e5e5e5;
 }
 
+/* painted logo */
+/* Добавил 3 класса лого, ведь нас просили лого ставить не картинкой, а писать текстом.
+На макете показывает, что цвет #2196f3, поэтому пришлось обернуть в span и добавить белый
+и чёрный цвета*/
+.header .logo {
+  color: black;
+}
+.logo1 {
+  color: var(--main-active-color);
+}
+.footer .logo2 {
+  color: var(--true-white-color);
+}
 /* header background color */
 .header {
   background-color: var(--true-white-color);
@@ -37,11 +51,17 @@ body {
 }
 
 /* removed ul styles */
-.section-list,
-.list,
-.nav-list,
-.address-list {
+ul {
   list-style: none;
+}
+
+/* links style */
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--title-color);
 }
 
 /* painted nav links */
@@ -88,4 +108,16 @@ body {
 .list-link:focus,
 .address-list-link:focus {
   color: var(--main-active-color);
+}
+
+/* buttons color on page portfolio */
+.filter-buttons .button {
+  color: var(--title-color);
+  background-color: var(--white-buttons-color);
+}
+
+.filter-buttons .button:hover, 
+.filter-buttons .button:focus {
+    background-color: var(--main-active-color);
+    color: var(--true-white-color);
 }
