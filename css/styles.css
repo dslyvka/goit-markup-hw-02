@@ -104,9 +104,11 @@ a:visited {
 .contacts-link:hover,
 .list-link:hover,
 .address-list-link:hover,
+.nav-link:hover,
 .contacts-link:focus,
 .list-link:focus,
-.address-list-link:focus {
+.address-list-link:focus,
+.nav-link:focus {
   color: var(--main-active-color);
 }
 
