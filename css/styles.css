@@ -44,12 +44,6 @@ body {
   list-style: none;
 }
 
-/* painted hover and focus for links */
-.list .list-link:hover,
-.list .list-link:focus {
-  color: var(--main-active-color);
-}
-
 /* painted nav links */
 .nav-list .list-link {
   color: var(--title-color);
@@ -84,4 +78,14 @@ body {
 
 .address-list-link {
   color: var(--transparent-white-color);
+}
+
+/* painted hover and focus for links */
+.contacts-link:hover,
+.list-link:hover,
+.address-list-link:hover,
+.contacts-link:focus,
+.list-link:focus,
+.address-list-link:focus {
+  color: var(--main-active-color);
 }
