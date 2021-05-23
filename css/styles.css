@@ -9,7 +9,7 @@
 }
 /* body color */
 body {
-  background-color: #e5e5e5;
+  background-color: var(--true-white-color);
 }
 
 /* painted logo */
@@ -122,4 +122,9 @@ a:visited {
 .filter-buttons .button:focus {
     background-color: var(--main-active-color);
     color: var(--true-white-color);
+}
+
+/* background color for oir-team section */
+.our-team {
+  background-color: var(--white-buttons-color);
 }
