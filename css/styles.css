@@ -53,16 +53,26 @@ body {
 }
 
 /* removed ul styles */
-ul {
+.nav-list,
+.address-list,
+.section-list,
+.contacts,
+.filter-buttons {
   list-style: none;
 }
 
 /* links style */
-a {
+.nav-link,
+.contacts-link,
+.address-list-link,
+.logo,
+.logo2 {
   text-decoration: none;
 }
 
-a:visited {
+.nav-link:visited,
+.contacts-link:visited,
+.address-list-link:visited {
   color: var(--title-color);
 }
 
