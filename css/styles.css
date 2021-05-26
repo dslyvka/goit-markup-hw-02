@@ -1,269 +1,216 @@
 :root {
   --main-active-color: #2196f3;
-  --true-white-color: #ffffff;
+  --background-color: #ffffff;
   --title-color: #212121;
   --hero-background-color: #2f303a;
-  --grey: #757575;
+  --text-color: #757575;
   --transparent-white-color: rgba(255, 255, 255, 0.6);
   --white-buttons-color: #f5f4fa;
 }
-/* body color */
+
+/* body styles */
 body {
-  background-color: var(--true-white-color);
+  background-color: var(--background-color);
   font-family: Roboto, sans-serif;
   font-style: normal;
 }
+/* body styles */
 
-/* painted logo */
-/* Добавил 3 класса лого, ведь нас просили лого ставить не картинкой, а писать текстом.
-На макете показывает, что цвет #2196f3, поэтому пришлось обернуть в span и добавить белый
-и чёрный цвета*/
-.header .logo {
-  color: black;
-}
-.logo1 {
-  color: var(--main-active-color);
-}
-.footer .logo2 {
-  color: var(--true-white-color);
-}
-/* header background color */
-.header {
-  background-color: var(--true-white-color);
-}
-
-/* hero background color */
-.hero {
-  background-color: var(--hero-background-color);
-}
-
-/* footer background color */
-.footer {
-  background-color: var(--hero-background-color);
-}
-
-/* hidden titles */
+/* HIDDEN */
 .hidden {
-  visibility: hidden;
-}
+  color: transparent;
 
-/* current page highlighting */
-.nav .current.nav-link {
-  color: var(--main-active-color);
+  font-size: 0px;
+  line-height: 0;
 }
+/* HIDDEN */
 
-/* removed ul styles */
-.nav-list,
-.address-list,
-.section-list,
-.contacts,
-.filter-buttons {
-  list-style: none;
+/* add button defolt button styles */
+.button {
+  cursor: pointer;
+  border: 0px;
 }
+/* add button defolt button styles */
 
-/* links style */
-.nav-link,
-.contacts-link,
-.address-list-link,
-.logo,
-.logo2 {
+/* delete styles for links and lists */
+.link {
   text-decoration: none;
 }
 
-.nav-link:visited,
-.contacts-link:visited,
-.address-list-link:visited {
+.link:visited {
   color: var(--title-color);
 }
 
-/* painted nav links and give them font-style */
-.nav-list .nav-link {
-  color: var(--title-color);
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+.list {
+  list-style: none;
 }
+/* delete styles for links and lists */
 
-/* painted contact-links */
-.contacts .contacts-link {
-  color: var(--grey);
-}
-
-.hero-title {
-  color: var(--true-white-color);
-}
-
-.hero-button {
-  color: var(--true-white-color);
-  background-color: var(--main-active-color);
-}
-
-.section-list-title,
-.section-title {
-  color: var(--title-color);
-}
-
-.section-list-text {
-  color: var(--grey);
-}
-
-.address-text {
-  color: var(--true-white-color);
-}
-
-.address-list-link {
-  color: var(--transparent-white-color);
-}
-
-/* painted hover and focus for links */
-.contacts-link:hover,
-.list-link:hover,
-.address-list-link:hover,
-.nav-link:hover,
-.contacts-link:focus,
-.list-link:focus,
-.address-list-link:focus,
-.nav-link:focus {
+/* header */
+.logo {
   color: var(--main-active-color);
-}
 
-/* buttons color on page portfolio */
-.filter-buttons .button {
-  color: var(--title-color);
-  background-color: var(--white-buttons-color);
-}
-
-.filter-buttons .button:hover,
-.filter-buttons .button:focus {
-  background-color: var(--main-active-color);
-  color: var(--true-white-color);
-}
-
-/* background color for oir-team section */
-.our-team {
-  background-color: var(--white-buttons-color);
-}
-
-/* logo fonts */
-.logo,
-.logo2 {
-  font-family: Raleway, sans-serif;
-
+  font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
-/* contact links in header fonts */
-.contacts-link {
+.logo-span-header {
+  color: var(--title-color);
+}
+
+.current-page.nav-link {
+  color: var(--main-active-color);
+}
+
+.nav-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  color: var(--title-color);
 }
 
-/* hero font param-s */
+.header-contacts-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+.link:hover,
+link:focus {
+  color: var(--main-active-color);
+}
+/* header */
+
+/* main */
+
+/* main studio(index)*/
+  /* main studio(index)*/
+    /* main studio(index)*/
+
+/* hero section */
+.hero {
+  background-color: var(--hero-background-color);
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  color: var(--background-color);
 }
 
-/* hero button font param-s */
 .hero-button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  font-weight: 700;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
-}
 
-/* other sections fonts param-s */
-.advantages .section-list-title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
+  color: var(--background-color);
+  background-color: var(--main-active-color);
+}
+/* hero section */
+
+/* advantages section */
+.title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
+
+  color: var(--title-color);
 }
 
-.advantages .section-list-text {
+.adv-title {
+  text-transform: uppercase;
+}
+
+.text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
 
-.what-are-we-doing .section-title {
-  font-weight: 700;
+  color: var(--text-color);
+}
+/* advantages section */
+
+/* what are we doing section */
+.what-are-we-doing-title {
   font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
+  line-height: 1.17;
+}
+/* what are we doing section */
+
+/* our team section */
+.our-team-section {
+  background-color: var(--white-buttons-color);
 }
 
-.our-team .section-title {
-  font-weight: 700;
+.our-team-title {
   font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
+  line-height: 1.17;
 }
 
-.our-team .section-list-title {
+.our-team-second-title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
+  line-height: 1.19;
 }
 
-.our-team .section-list-text {
+.our-team-text {
   font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
+  line-height: 1.19;
+}
+/* our team section */
+
+    /* main studio(index)*/
+  /* main studio(index)*/
+/* main studio(index)*/
+
+/* main portfolio */
+  /* main portfolio */
+    /* main portfolio */
+
+    /* main portfolio */
+  /* main portfolio */
+/* main portfolio */
+
+/* main */
+
+/* footer */
+.page-footer {
+  background-color: var(--hero-background-color);
+}
+.footer-logo {
+  color: var(--background-color);
 }
 
 .address-text {
+  font-style: normal;
+
+  color: var(--background-color);
+}
+
+.address-link {
   font-weight: 400;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  font-style: normal;
-}
 
-.address-list-link {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  color: var(--transparent-white-color);
 }
-
-.filter-buttons .button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
-.our-portfolio .section-list-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
-.our-portfolio .section-list-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-}
-
-.button {
-  cursor: pointer;
-}
+/* footer */
