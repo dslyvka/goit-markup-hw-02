@@ -25,19 +25,55 @@ body {
 }
 /* HIDDEN */
 
+/* add text and title defolt styles */
+.title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+
+  color: var(--title-color);
+}
+
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--text-color);
+}
+/* add text and title defolt styles */
+
 /* add button defolt button styles */
 .button {
   cursor: pointer;
   border: 0px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em; 
+
+  color: var(--title-color);
+  background-color: var(--white-buttons-color);
+}
+
+.button:hover, .button:focus {
+  color: var(--background-color);
+  background-color: var(--main-active-color);
+}
+
+.current-button {
+  color: var(--background-color);
+  background-color: var(--main-active-color);
 }
 /* add button defolt button styles */
 
 /* delete styles for links and lists */
 .link {
   text-decoration: none;
-}
-
-.link:visited {
   color: var(--title-color);
 }
 
@@ -45,6 +81,13 @@ body {
   list-style: none;
 }
 /* delete styles for links and lists */
+
+/* add my own defolt link styles */
+.link:hover,
+.link:focus {
+  color: var(--main-active-color);
+}
+/* add my own defolt link styles */
 
 /* header */
 .logo {
@@ -82,11 +125,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
-
-.link:hover,
-link:focus {
-  color: var(--main-active-color);
-}
 /* header */
 
 /* main */
@@ -117,6 +155,7 @@ link:focus {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  text-align: center;
 
   color: var(--background-color);
   background-color: var(--main-active-color);
@@ -124,26 +163,8 @@ link:focus {
 /* hero section */
 
 /* advantages section */
-.title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-
-  color: var(--title-color);
-}
-
 .adv-title {
   text-transform: uppercase;
-}
-
-.text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-
-  color: var(--text-color);
 }
 /* advantages section */
 
@@ -183,6 +204,8 @@ link:focus {
 /* main portfolio */
   /* main portfolio */
     /* main portfolio */
+
+
 
     /* main portfolio */
   /* main portfolio */
